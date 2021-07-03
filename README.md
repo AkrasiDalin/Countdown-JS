@@ -1,2 +1,2 @@
-# Countdown-JS
-Countdown-JS
+# Counter-JS
+Counter-JS
