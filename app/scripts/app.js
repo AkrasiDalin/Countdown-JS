@@ -1,4 +1,24 @@
-import{ reduceNumber, incrementNumber } from './tools.js';
+import{ reduceNumber, incrementNumber, countDownInit, countUpInit } from './tools.js';
 
-console.log('ciao', reduceNumber(45))
+let domDisplay = document.querySelector('#number');
+// let initVal = document.querySelector('#inital-val').value;
 
+const increaseButton = document.querySelector('button[value="increase"]');
+increaseButton.onclick = function () {
+    
+    // console.log('_________',initVal)
+
+    console.log('countUpwords')
+    countUpInit(domDisplay);
+    
+}
+
+const decreaseButton = document.querySelector('button[value="decrease"]');
+decreaseButton.onclick = function () {
+    
+    // console.log('_________',initVal)
+
+    console.log('countDownwords')
+    countDownInit(domDisplay);
+    
+}
